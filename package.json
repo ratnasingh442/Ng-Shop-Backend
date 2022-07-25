@@ -1,0 +1,27 @@
+{
+  "name": "eshop",
+  "version": "1.0.0",
+  "description": "backend of eshop",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ratnasingh442/NgShop.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ratnasingh442/NgShop/issues"
+  },
+  "homepage": "https://github.com/ratnasingh442/NgShop#readme",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "mongoose": "^6.4.6",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.19"
+  }
+}
