@@ -3,7 +3,9 @@ const express = require('express');
 const router = express.Router();
 
 router.get(`/`, async (req, res) =>{
+    console.log("Inside categories")
     const categoryList = await Category.find();
+    console.log(categoryList)
 
     if(!categoryList) {
         res.status(500).json({success: false})
@@ -23,6 +25,7 @@ router.get('/:id', async(req,res)=>{
 
 
 router.post('/', async (req,res)=>{
+    console.log(req);
     let category = new Category({
         name: req.body.name,
         icon: req.body.icon,
